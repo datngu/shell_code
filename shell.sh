@@ -9,3 +9,6 @@ for chr in {1..22} X Y MT
 do
   sed -i "1s/.*/>$chr/" $chr.fa
 done
+
+## config to avoid certificate requirement in gitbuket
+git config --global http.sslverify "false"
